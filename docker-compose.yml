@@ -1,6 +1,8 @@
 version: '3'
 services:
-  app:
+  web:
+    environment:
+      - PORT=8005
     image: "mattmalcher/fai_cactus:0.1"
     ports:
-          - "8008:8008"
+          - 8005:8005

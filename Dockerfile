@@ -10,5 +10,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py ./
 COPY export.pkl ./
 
-# start the app
-CMD [ "python", "./app.py"]
+# Run the image as a non-root user (ubuntu version)
+RUN useradd -m myuser
+USER myuser
+
+# Run the app.  CMD is required to run on Heroku
+# $PORT is set by Heroku
+CMD  uvicorn app:app --host 0.0.0.0 --port $PORT
