@@ -1,11 +1,16 @@
 # fai_cactus
-Testing deployment of a simple image classifier which distinguishes between different succulents: crassula_ovata, haworthi_retusa, lithops, purple_echeveria
+Testing deployment of a simple image classifier which distinguishes between different succulents: 
+
+* crassula_ovata
+* haworthi_retusa
+* lithops
+* purple_echeveria
 
 Deployed at: https://fai-cactus.herokuapp.com/
 
 ## Steps
 
-###1 Create Example app.py
+### 1 Create Example app.py
 Combine the starlet reference script from: https://github.com/encode/starlette-example
 with the example endpoint definition from the lesson notebook.
 
@@ -79,7 +84,7 @@ Check the logs:
 heroku logs -a fai-cactus
 ```
 
-#Refs
+# Refs
 The following are useful reads:
 
 * https://pythonspeed.com/articles/base-image-python-docker-images/
