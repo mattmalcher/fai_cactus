@@ -1,0 +1,6 @@
+version: '3'
+services:
+  app:
+    image: "mattmalcher/fai_cactus:0.1"
+    ports:
+          - "8008:8008"

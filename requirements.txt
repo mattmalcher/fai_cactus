@@ -1,0 +1,7 @@
+fastai==1.0.61
+starlette==0.13.4
+torch==1.4.0
+torchvision==0.5.0
+uvicorn
+aiohttp
+asyncio
